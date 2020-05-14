@@ -78,6 +78,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+PRODUCT_PACKAGES += \
+    external_asus_stitchimage-ten-plus
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
