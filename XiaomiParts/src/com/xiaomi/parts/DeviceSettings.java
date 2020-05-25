@@ -49,7 +49,9 @@ public class DeviceSettings extends PreferenceFragment implements
     private VibratorCallStrengthPreference mVibratorCallStrength;
     public static final String KEY_NOTIF_VIBSTRENGTH = "vib_notif_strength";
     private VibratorNotifStrengthPreference mVibratorNotifStrength;
+
     private SecureSettingSwitchPreference mSetOnBoot;
+
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
