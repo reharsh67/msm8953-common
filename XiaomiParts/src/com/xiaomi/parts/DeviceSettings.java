@@ -50,9 +50,7 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String KEY_NOTIF_VIBSTRENGTH = "vib_notif_strength";
     private VibratorNotifStrengthPreference mVibratorNotifStrength;
 
-
     private SecureSettingSwitchPreference mSetOnBoot;
-
 
 
     @Override

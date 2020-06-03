@@ -97,7 +97,6 @@
     </PreferenceCategory>
 
 
-
         android:title="@string/other_category" >
         <SwitchPreference
             android:key="fastcharge"
