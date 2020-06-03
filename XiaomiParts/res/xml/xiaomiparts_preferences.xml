@@ -96,15 +96,4 @@
 
     </PreferenceCategory>
 
-
-        android:title="@string/other_category" >
-        <SwitchPreference
-            android:key="fastcharge"
-            android:defaultValue="1"
-            android:title="@string/fastcharge_title"
-            android:icon="@drawable/ic_fastcharge"
-            android:summary="@string/fastcharge_summary" />
-    </PreferenceCategory>
-
-
 </PreferenceScreen>
