@@ -7,7 +7,7 @@ import android.service.quicksettings.TileService;
 import com.xiaomi.parts.DeviceSettings;
 import com.xiaomi.parts.DeviceSettingsActivity;
 
-public class xiaomiPartsTile extends TileService {
+public class XiaomiPartsTile extends TileService {
 
     @Override
     public void onClick() {

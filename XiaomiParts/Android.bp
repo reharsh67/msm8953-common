@@ -6,7 +6,6 @@ android_app {
         "androidx.preference_preference",
     ],
 
-    resource_dirs: ["res"],
     srcs: ["src/**/*.java"],
 
     certificate: "platform",
