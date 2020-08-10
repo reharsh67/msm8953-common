@@ -15,6 +15,9 @@
         android:label="@string/xiaomi_parts_title"
         android:supportsRtl="true"
         android:theme="@style/CustomOptionsTheme">
+        
+        
+       
 
         <receiver
             android:name=".BootReceiver"
@@ -107,5 +110,22 @@
                     android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
         </service>
+         <service android:name=".ambient.SensorsDozeService"
+                 android:permission="SensorsDozeService">
+        </service>
+
+        <activity
+            android:name=".ambient.AmbientGesturePreferenceActivity"
+            android:icon="@drawable/ic_doze"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/CustomOptionsTheme"
+            android:label="@string/ambient_display_gestures_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>
