@@ -171,6 +171,15 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.power</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>IPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
         <fqname>@1.4::IRadio/slot1</fqname>
@@ -367,11 +376,19 @@
         </interface>
     </hal>
     <hal format="hidl">
+<<<<<<< HEAD
         <name>vendor.lineage.touch</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
             <name>IKeyDisabler</name>
+=======
+        <name>vendor.lineage.power</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ILineagePower</name>
+>>>>>>> parent of f67c28a... msm8953-common: Build new aidl qti power HAL
             <instance>default</instance>
         </interface>
     </hal>

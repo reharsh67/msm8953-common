@@ -38,8 +38,12 @@ TARGET_USES_64_BIT_BINDER := true
 # Build
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_PREBUILT_ELF_FILES := true
+
 TARGET_HAS_BROKEN_WLAN_SET_INTERFACE := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+TEMPORARY_DISABLE_PATH_RESTRICTIONS=true
+
+
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000
