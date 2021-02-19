@@ -5,3 +5,7 @@ allow system_app sysfs_zram:file read;
 allow system_app wificond:binder call;
 allow system_app fm_radio_device:chr_file r_file_perms;
 allow system_app fm_radio_device:file r_file_perms;
+# Allow theme_prop to be read and set by Settings
+get_prop(system_app, theme_prop)
+set_prop(system_app, theme_prop) 
+allow system_app apk_data_file:dir { write };
