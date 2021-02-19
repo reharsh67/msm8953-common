@@ -7,3 +7,4 @@ allow untrusted_app_29 dalvikcache_data_file:file { execmod };
 allow untrusted_app_29 hal_memtrack_default:binder { call };
 allow untrusted_app_29 theme_prop:file { read };
 
+allow untrusted_app_29 proc_net_tcp_udp:file { read };

@@ -1,0 +1,7 @@
+
+allow untrusted_app exported_camera_prop:file { read };
+allow untrusted_app theme_prop:file { read };
+
+allow untrusted_app proc_asound:dir { search };
+allow untrusted_app proc_touchpanel:dir { search };
+allow untrusted_app mnt_sdcard_file:lnk_file { read };
