@@ -410,12 +410,7 @@ PRODUCT_COPY_FILES += \
 
 # Wi-Fi Display
 PRODUCT_PACKAGES += \
-    libnl \
-    libstagefright_enc_common \
-    libshim_wfdmmsink
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+    libstagefright_enc_common
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
