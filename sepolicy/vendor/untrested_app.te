@@ -1,0 +1,24 @@
+
+allow untrusted_app proc_asound:dir { search };
+allow untrusted_app proc_touchpanel:dir { search };
+
+allow untrusted_app unlabeled:dir { getattr };
+allow untrusted_app proc_zoneinfo:file { read };
+allow untrusted_app proc_zoneinfo:file { open };
+allow untrusted_app proc_qtaguid_stat:file { read };
+allow untrusted_app proc_qtaguid_stat:file { open };
+allow untrusted_app proc_qtaguid_stat:file { getattr };
+allow untrusted_app proc:file { read };
+allow untrusted_app proc:file { open };
+allow untrusted_app proc:file { getattr };
+allow untrusted_app vendor_file:file { read };
+allow untrusted_app vendor_file:file { open };
+allow untrusted_app vendor_file:file { getattr };
+allow untrusted_app unlabeled:dir { search };
+
+
+
+allow untrusted_app mnt_sdcard_file:lnk_file { read };
+allow untrusted_app proc_vmstat:file { open };
+
+allow untrusted_app proc_zoneinfo:file { getattr };

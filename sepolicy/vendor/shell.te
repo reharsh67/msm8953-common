@@ -1,0 +1,4 @@
+
+allow shell unlabeled:dir { search };
+allow shell unlabeled:dir { write };
+allow shell unlabeled:dir { getattr };

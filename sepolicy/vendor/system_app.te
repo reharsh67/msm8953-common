@@ -1,0 +1,6 @@
+
+allow system_app sysfs_zram:file { getattr };
+allow system_app proc_vmallocinfo:file { read };
+
+allow system_app unlabeled:dir { search };
+allow system_app sysfs_zram:file { open };

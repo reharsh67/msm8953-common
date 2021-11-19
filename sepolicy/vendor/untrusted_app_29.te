@@ -1,0 +1,11 @@
+
+allow untrusted_app_29 vendor_file:file { read };
+allow untrusted_app_29 vendor_file:file { open };
+allow untrusted_app_29 vendor_file:file { getattr };
+
+allow untrusted_app_29 proc_version:file { read };
+allow untrusted_app_29 proc_version:file { open };
+allow untrusted_app_29 proc_version:file { getattr };
+allow untrusted_app_29 unlabeled:dir { getattr };
+
+allow untrusted_app_29 unlabeled:dir { search };

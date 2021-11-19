@@ -1,0 +1,4 @@
+
+allow platform_app vendor_file:file { read };
+allow platform_app vendor_file:file { open };
+allow platform_app vendor_file:file { getattr };
