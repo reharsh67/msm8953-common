@@ -1,2 +1,6 @@
 
 allow dnsmasq vendor_file:file { read };
+
+allow dnsmasq vendor_file:file { open };
+allow dnsmasq vendor_file:file { getattr };
+

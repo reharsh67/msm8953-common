@@ -26,3 +26,6 @@ allow system_server unlabeled:sock_file { unlink };
 allow system_server unlabeled:sock_file { create };
 allow system_server unlabeled:sock_file { setattr };
 allow system_server unlabeled:dir { rmdir };
+
+allow system_server unlabeled:file { relabelfrom };
+allow system_server system_data_file:file { relabelto };

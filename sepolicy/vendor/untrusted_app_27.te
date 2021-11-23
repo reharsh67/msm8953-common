@@ -1,4 +1,11 @@
 
+allow untrusted_app_27 postinstall_mnt_dir:dir { getattr };
+allow untrusted_app_27 aac_drc_prop:file { open };
+allow untrusted_app_27 aac_drc_prop:file { getattr };
 allow untrusted_app_27 sysfs:file { read };
 allow untrusted_app_27 sysfs:file { open };
 allow untrusted_app_27 sysfs:file { getattr };
+
+allow untrusted_app_27 vendor_file:file { read };
+allow untrusted_app_27 vendor_file:file { open };
+allow untrusted_app_27 vendor_file:file { getattr };

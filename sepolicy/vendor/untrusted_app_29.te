@@ -1,4 +1,12 @@
+allow untrusted_app_29 block_device:dir { search };
 
+allow untrusted_app_29 proc:file { read };
+allow untrusted_app_29 proc:file { open };
+allow untrusted_app_29 proc_max_map_count:file { read };
+allow untrusted_app_29 proc_max_map_count:file { open };
+allow untrusted_app_29 proc_max_map_count:file { getattr };
+
+allow untrusted_app_29 cache_file:lnk_file { read };
 allow untrusted_app_29 vendor_file:file { read };
 allow untrusted_app_29 vendor_file:file { open };
 allow untrusted_app_29 vendor_file:file { getattr };

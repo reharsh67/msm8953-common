@@ -10,3 +10,6 @@ allow mm-qcamerad camera_data_file:dir w_dir_perms;
 
 allow mm-qcamerad default_prop:file { read };
 allow untrusted_app dalvikcache_data_file:file { execmod };
+
+allow mm-qcamerad default_prop:file { open };
+allow mm-qcamerad default_prop:file { getattr };
